@@ -19,8 +19,17 @@
    <link href="rb_reset.css" rel="stylesheet" />
    <link href="rb_styles.css" rel="stylesheet" />
    <script src="main.js"></script>
+   <style>
+        div.labelCollection {
+            padding-right: 20em;
+            padding-top: 1em;
+        }
+        input.moveInputs {
+            float: right;
+            margin-right: 16em;
+        }
+   </style>
 </head>
-
 <body>
    <header>
       <img src="rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
@@ -100,34 +109,44 @@
      <form>
         <fieldset>
             <legend>Share Your Experience</legend>
-            <div>
-                <span>Order type: 
-                    <select>
-                        <option value="dineIn">Dine In</option>
-                        <option value="carryOut">Carry Out</option>
-                        <option value="delivery">Delivery</option>
-                    </select>
-                </span>
+            <div style="margin-top:1em">
+                <div>
+                    <span>Order type: 
+                        <select>
+                            <option value="dineIn">Dine In</option>
+                            <option value="carryOut">Carry Out</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+                    </span>
+                </div>
                 <br>
-                <span>Was your service friendly? 
-                    <input type="radio" name="friendly" value="Yes"> Yes
-                    <input type="radio" name="friendly" value="No"> No
-                </span>
+                <div>
+                    <span>Was your service friendly? 
+                        <input type="radio" name="friendly" value="Yes"> Yes
+                        <input type="radio" name="friendly" value="No"> No
+                    </span>
+                </div>
                 <br>
-                <span>Was your order correct?
-                    <input type="radio" name="correct" value="Yes"> Yes
-                    <input type="radio" name="correct" value="No"> No
-                </span>
+                <div>
+                    <span>Was your order correct?
+                        <input type="radio" name="correct" value="Yes"> Yes
+                        <input type="radio" name="correct" value="No"> No
+                    </span>
+                </div>
                 <br>
-                <span>
-                    Date of your visit:
-                    <input id="date" type="date">
-                </span>
+                <div>
+                    <span>
+                        Date of your visit:
+                        <input id="date" type="date">
+                    </span>
+                </div>
                 <br>
-                <span>
-                    Rate your overall experience
-                    <input id="rating" type="range">
-                </span>
+                <div>
+                    <span>
+                        Rate your overall experience
+                        <input id="rating" type="range">
+                    </span>
+                </div>
             </div>
         </fieldset>
      </form>
