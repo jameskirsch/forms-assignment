@@ -54,3 +54,13 @@ nav a {
    text-decoration: none;
 }
 
+div.labelCollection {
+    padding-right: 20em;
+    padding-top: 1em;
+}
+
+input.moveInputs {
+    float: right;
+    margin-right: 16em;
+}
+
